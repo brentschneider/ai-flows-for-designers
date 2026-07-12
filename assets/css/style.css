@@ -6,7 +6,8 @@
   --radius-pill: 999px;
 
   /* Light mode (default) */
-  --bg: #FBFBF9;
+  /* --bg: #FBFBF9; */
+  --bg: #fff9e6;
   --surface: #FFFFFF;
   --ink: #111111;
   --ink-secondary: #5A5A5A;

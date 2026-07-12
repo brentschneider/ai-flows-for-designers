@@ -1,4 +1,4 @@
-# Beyond the Chat Box: Twelve AI Workflows for Designers
+# Twelve AI Workflows for Designers
 
 Chat is where most designers start with AI. It's not where the leverage is.
 

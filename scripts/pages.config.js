@@ -21,4 +21,4 @@ export const pages = [
 
 export const tiers = ['Starter', 'Intermediate', 'Advanced'];
 
-export const siteTitle = 'Claude for Designers';
+export const siteTitle = 'AI for Designers';
