@@ -2,7 +2,7 @@
 
 A static site publishing twelve practical AI workflow guides for product designers — moving past chat and into real tools: Figma files, GitHub repos, workshop boards, working prototypes.
 
-Live at: https://brentschneider.github.io/AI-for-designers/ *(update with actual URL)*
+Live at: https://brentschneider.github.io/ai-flows-for-designers/
 
 ---
 
