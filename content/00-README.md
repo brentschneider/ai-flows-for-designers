@@ -1,43 +1,43 @@
 # Twelve AI Workflows for Designers
 
-Chat is where most designers start with AI. It's not where the leverage is.
+Conversational chat is where most designers start with AI. These projects will help you dial in where the leverage is.
 
-These twelve guides move you past the chat box and into workflows that touch your real tools: live Figma files, GitHub repositories, workshop boards, your calendar and inbox, working prototypes.
+You want to move past chat and into workflows that touch your real tools: live Figma files, GitHub repositories, workshop boards, your calendar and inbox, working prototypes but don't know how.
 
-**Follow the numbers, or follow your deadline.** The numbering is a learning path (Starter first, Advanced last), but each guide stands entirely on its own. If something's due this week, jump straight to its guide. Only have twenty minutes today? Do Guide 02; you'll finish with a real file.
+**Follow the numbers, or follow your deadline.** The numbering is a learning path (Foundations first, Scaling last), but each guide stands entirely on its own. If something's due this week, jump straight to its guide. Only have twenty minutes today? Do Guide 02; you'll finish with a real file.
 
-**Every guide has the same shape.** What you'll be able to do. Setup from scratch. A step-by-step first run. Copy-paste prompts. Troubleshooting. Where to take it next.
+**Every guide has the same shape.** What you'll be able to do. Setup from scratch. A step-by-step first run. Copy-paste prompts. Troubleshooting, and Where to take it next.
 
 **Claude is the reference implementation, not a requirement.** Every setup walkthrough uses Claude's actual interface, so you can follow the steps exactly. But the Figma guides run on the open Model Context Protocol (MCP) standard, so those prompts work verbatim from any MCP-capable client. Where a workflow transfers, the guide ends with a short portability section; where it doesn't, the workflow depends on Claude-specific features.
 
 ## The twelve guides
 
-### Starter: under an hour of total setup
+### Foundations: set up your AI practice
 
 | # | Guide | What you get |
 |---|-------|--------------|
-| 01 | [Memory and past-chat search](01-memory-and-past-chats.md) | Continuity: Claude that knows your projects and can retrieve past decisions |
-| 02 | [Claude's computer: real files](02-claudes-computer-real-files.md) | Finished Word/Excel/PowerPoint/PDF deliverables and real data analysis |
-| 03 | [Orchestrate your work stack](03-orchestrate-your-work-stack.md) | One prompt spanning email, calendar, files, and design tools |
+| 01 | [Memory and past-chat search](foundations/memory-and-past-chats/) <span class="pill pill-starter">Starter</span> | Continuity: Claude that knows your projects and can retrieve past decisions |
+| 02 | [Claude's computer: real files](foundations/claudes-computer-real-files/) <span class="pill pill-starter">Starter</span> | Finished Word/Excel/PowerPoint/PDF deliverables and real data analysis |
+| 03 | [Custom skills: your voice](foundations/custom-skills-your-voice/) <span class="pill pill-intermediate">Intermediate</span> | Claude that writes in your voice and follows your team's formats |
+| 04 | [Orchestrate your work stack](foundations/orchestrate-your-work-stack/) <span class="pill pill-starter">Starter</span> | One prompt spanning email, calendar, files, and design tools |
 
-### Intermediate: the leverage tier
-
-| # | Guide | What you get |
-|---|-------|--------------|
-| 04 | [Custom skills: your voice](04-custom-skills-your-voice.md) | Claude that writes in your voice and follows your team's formats |
-| 05 | [AI-powered artifacts ("Claudeception")](05-ai-powered-artifacts-claudeception.md) | Working AI prototypes: apps that contain their own Claude |
-| 06 | [Accessibility lint against WCAG 2.2](06-accessibility-lint-figma-wcag.md) | Contrast, target-size, and state audits of the design file, before handoff |
-| 07 | [FigJam workshop synthesis](07-figjam-workshop-synthesis.md) | Stickies clustered, themed, and written back onto the board automatically |
-| 08 | [Build Figma Slides decks](08-build-figma-slides-decks.md) | First-draft decks built directly in Figma Slides, ready for your polish |
-| 09 | [Figma version archaeology](09-figma-version-archaeology.md) | Diffs, blame, and changelogs for design files: who changed what, when |
-
-### Advanced: design system operations
+### Building: make things with AI
 
 | # | Guide | What you get |
 |---|-------|--------------|
-| 10 | [Run JavaScript in your Figma file](10-run-javascript-in-your-figma-file.md) | Batch canvas operations (renames, variable generation, restructuring) in one pass |
-| 11 | [Design token round-trip: Figma ↔ GitHub](11-design-token-round-trip-figma-github.md) | A working token sync pipeline between design and code |
-| 12 | [Design–code parity audit](12-design-code-parity-audit.md) | Evidence-based drift reports: does production match the design system? |
+| 05 | [FigJam workshop synthesis](building/figjam-workshop-synthesis/) <span class="pill pill-intermediate">Intermediate</span> | Stickies clustered, themed, and written back onto the board automatically |
+| 06 | [AI-powered artifacts ("Claudeception")](building/ai-powered-artifacts-claudeception/) <span class="pill pill-intermediate">Intermediate</span> | Working AI prototypes: apps that contain their own Claude |
+| 07 | [Build Figma Slides decks](building/build-figma-slides-decks/) <span class="pill pill-intermediate">Intermediate</span> | First-draft decks built directly in Figma Slides, ready for your polish |
+
+### Scaling: systemize, audit, automate
+
+| # | Guide | What you get |
+|---|-------|--------------|
+| 08 | [Accessibility lint against WCAG 2.2](scaling/accessibility-lint-figma-wcag/) <span class="pill pill-intermediate">Intermediate</span> | Contrast, target-size, and state audits of the design file, before handoff |
+| 09 | [Figma version archaeology](scaling/figma-version-archaeology/) <span class="pill pill-intermediate">Intermediate</span> | Diffs, blame, and changelogs for design files: who changed what, when |
+| 10 | [Design–code parity audit](scaling/design-code-parity-audit/) <span class="pill pill-advanced">Advanced</span> | Evidence-based drift reports: does production match the design system? |
+| 11 | [Design token round-trip: Figma ↔ GitHub](scaling/design-token-round-trip-figma-github/) <span class="pill pill-advanced">Advanced</span> | A working token sync pipeline between design and code |
+| 12 | [Run JavaScript in your Figma file](scaling/run-javascript-in-your-figma-file/) <span class="pill pill-advanced">Advanced</span> | Batch canvas operations (renames, variable generation, restructuring) in one pass |
 
 ## What these guides assume
 
