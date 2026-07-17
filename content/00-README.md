@@ -1,14 +1,18 @@
 # Twelve AI Workflows for Designers
 
-Conversational chat is where most designers start with AI. These projects will help you dial in where the leverage is.
+Working alongside designers daily, I kept seeing the same pattern: the struggle wasn't with AI tools, they struggled to see their value in the AI workflow. 
 
-You want to move past chat and into workflows that touch your real tools: live Figma files, GitHub repositories, workshop boards, your calendar and inbox, working prototypes but don't know how.
+These guides are built around a simple idea: you are the taste. AI handles the mechanics; designers bring the judgment.
+
+Don't know how to move past chat and into workflows that touch real tools: live Figma files, GitHub repos, workshop boards, your calendar, inbox, slack, and working prototypes?
 
 **Follow the numbers, or follow your deadline.** The numbering is a learning path (Foundations first, Scaling last), but each guide stands entirely on its own. If something's due this week, jump straight to its guide. Only have twenty minutes today? Do Guide 02; you'll finish with a real file.
 
-**Every guide has the same shape.** What you'll be able to do. Setup from scratch. A step-by-step first run. Copy-paste prompts. Troubleshooting, and Where to take it next.
+**Every guide has the same shape.** What changes. What you need. First run. Copy-paste prompts. Troubleshooting. Where this takes you.
 
-**Claude is the reference implementation, not a requirement.** Every setup walkthrough uses Claude's actual interface, so you can follow the steps exactly. But the Figma guides run on the open Model Context Protocol (MCP) standard, so those prompts work verbatim from any MCP-capable client. Where a workflow transfers, the guide ends with a short portability section; where it doesn't, the workflow depends on Claude-specific features.
+**Claude is the reference implementation, not a requirement.** Every setup walkthrough uses Claude's actual interface, so you can follow the steps exactly. But the Figma guides run on the open Model Context Protocol (MCP) standard, so those prompts work verbatim in any MCP-capable client. 
+
+Where a workflow transfers, the guide ends with a short portability section; where it doesn't, the workflow depends on Claude-specific features.
 
 ## The twelve guides
 
@@ -43,21 +47,26 @@ You want to move past chat and into workflows that touch your real tools: live F
 
 Almost nothing.
 
-You need a Claude account (claude.ai). Start on the free plan and upgrade when you hit limits. Usage caps will interrupt longer working sessions, and connector limits matter once you're running multiple custom tools, but hitting those walls is the signal to upgrade, not a prerequisite. Plan features change often; the current specifics live at https://support.claude.com.
+The walkthroughs use Claude as the reference implementation — it's what the steps follow. Gemini and ChatGPT cover the same ground for most workflows; where something is Claude-specific, the guide says so. Check each platform's current plan limits before you start. (caps and connector availability change often.)
 
-No coding ability is required; where code runs, Claude writes and runs it. The Figma guides (06–12) need edit access to a Figma file and an MCP connector, and each includes its own connector setup. There's no prerequisite reading.
+No coding ability is required; where code runs, the AI writes and runs it. The Figma guides (06–12) need edit access to a Figma file and an MCP connector, and each includes its own connector setup. 
 
-One distinction before the Figma tier: Figma's official MCP server reads design context well, while community servers with a desktop-bridge plugin add write access to the canvas. Write access cuts both ways. A connected server can do anything you can do in that file, so vet who maintains it before you connect. And if you work inside an organization, check your tooling policy first: connecting an unapproved service to work files is a call your security team should be part of, not one you make alone.
+- Claude: claude.ai
+- Gemini: gemini.google.com
+- ChatGPT: chatgpt.com
+
+A note on Figma MCP servers: the official server reads design context. Community servers add write access, meaning a connected server can do anything you can do in that file. And if you work inside an organization, check your tooling policy first: connecting an unapproved service to work files is a call your security team should be part of, not one you make alone.
+
 
 ## Suggested path
 
-The numbering is the default path: work front to back. A real deadline overrides it, because every guide lands harder when it produces something you actually owe someone. Three milestones, each defined by what you walk away with:
+Work front to back, or skip to what's due this week. Every guide stands alone. Three stopping points worth knowing:
 
-**Milestone 1: a deliverable from your real files, in one sitting.** Guides 01–03, no design-tool connectors required. You finish with a document, spreadsheet, or analysis Claude produced from your actual work, and a Claude that remembers your projects going forward. These three also make everything later smoother: memory carries your context, the file tooling produces the reports the later guides generate, and orchestration connects outputs to your calendar, docs, and email.
+**Guides 01–03: something real, in one sitting.** No Figma connectors needed. You finish with a deliverable Claude made from your actual files — and a Claude that remembers your projects from here on.
 
-**Milestone 2: a shipped artifact from your current sprint.** Guides 04–09. Start with 04 and 05. They need no new connectors, and they compound: skills make everything Claude writes sound like you, and artifacts turn your prompting into tools teammates can use. Then pick the Figma guide that matches something due this week, whether that's an accessibility audit before handoff (06), a workshop that needs synthesis (07), a deck draft (08), or a "who changed this" investigation (09). They're sequenced by ascending complexity, but each contains its own setup, so enter wherever your real work points. You've hit this milestone when a guide's output goes to a teammate, not a practice file.
+**Guides 04–09: something shipped this sprint.** Start with 04 and 05 — no new connectors, and they make everything Claude writes sound like you. Then pick whichever Figma guide matches real work due this week. You've landed this one when the output goes to a teammate, not a practice file.
 
-**Milestone 3: a capability your team relies on.** Guides 10–12. The advanced tier produces operational infrastructure: batch canvas operations, a working token pipeline, drift reports your team can act on. Guide 12 is a design-system governance capability, not a demo. Guide 10's code execution is the foundation the other two lean on conceptually. Once you've watched Claude operate directly on canvas data, token pipelines and parity audits become legible as process rather than trick. You've hit this milestone when one of these workflows runs on a schedule or a teammate asks you to run it again.
+**Guides 10–12: something your team runs again.** Operational stuff — a token pipeline, a parity audit, batch canvas operations. You're done when a teammate asks you to run it again.
 
 ## Three habits that make all twelve work better
 
@@ -69,4 +78,4 @@ The numbering is the default path: work front to back. A real deadline overrides
 
 ## A note on change
 
-AI product features move fast. Where a guide references a specific setting or plan limit, the current word lives at https://support.claude.com (product features) and https://docs.claude.com (technical documentation). If a step doesn't match what you see, check there; the workflow concepts in these guides outlive any individual settings screen.
+AI product features move fast. If a step doesn't match what you see, check the platform's own help docs — the workflow concepts here outlive any individual settings screen.

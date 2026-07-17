@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 A skill is a folder containing a `SKILL.md` file: structured instructions plus examples that Claude reads when a matching task comes up. Where a one-off prompt evaporates when the chat ends, a skill persists; it's your prompt engineering, versioned and reusable.
 
@@ -19,13 +19,13 @@ For designers, the highest-value skills tend to be voice and format encodings:
 
 The difference in output quality is not subtle. Generic Claude writes competent, forgettable prose. Claude with a well-built voice skill writes drafts you edit rather than rewrite.
 
-## Before you start
+## What you need
 
 Skill support varies by Claude surface. Skills are most at home in Claude Code and in claude.ai's file-creation environment, and the feature set evolves quickly, so check current documentation at https://docs.claude.com for where custom skills can be uploaded on your plan. The concepts below transfer everywhere; even where formal skill loading isn't available, the same file works as a Project instruction or a pasted preamble.
 
 Gather your raw material: 3–5 examples of your best work in the target format. The skill's quality is capped by the quality and consistency of these examples.
 
-## Step-by-step
+## First run
 
 1. **Pick one narrow job.** "Write like me" is too broad to encode well. "Write LinkedIn announcement posts in my voice" or "structure usability findings the way our team does" is right-sized. One skill, one job.
 2. **Reverse-engineer your own patterns with Claude's help.** Paste your examples and prompt: *"Analyze these five posts I wrote. Describe the voice as concrete, checkable rules: sentence length distribution, how openings work, how I use questions, what I never do, structural moves that repeat. Be specific enough that another writer could imitate me."* You'll learn things about your own writing; correct anything it gets wrong.
@@ -60,6 +60,6 @@ cover? Then revise it.
 
 **Team members get different results.** They're using different skill versions. Keep skills in a shared repo and treat changes like code review: skills are team infrastructure, not personal stash.
 
-## Going further
+## Where this takes you
 
 Once one voice skill works, build the library: one per recurring document type your practice produces. Skills also pair naturally with AI-powered artifact apps: a skill defines *how* Claude should work, and an artifact wraps that behavior in an interface teammates can use. Together they're the start of a real design-ops toolchain. The skill-creation workflow itself can be encoded as a skill, which is exactly as recursive and as useful as it sounds.

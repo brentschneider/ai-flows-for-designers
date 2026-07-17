@@ -10,6 +10,7 @@ const partialsDir = path.join(rootDir, 'partials');
 const assetsDir = path.join(rootDir, 'assets');
 const distDir = path.join(rootDir, 'dist');
 
+const buildVersion = Date.now();
 const headerTemplate = readFileSync(path.join(partialsDir, 'header.html'), 'utf8');
 const footerTemplate = readFileSync(path.join(partialsDir, 'footer.html'), 'utf8');
 
@@ -70,6 +71,7 @@ function renderPage(page) {
     .replaceAll('{{SITE_TITLE}}', siteTitle)
     .replaceAll('{{ROOT_PATH}}', rootPath)
     .replaceAll('{{ASSET_PATH}}', assetPath)
+    .replaceAll('{{BUILD_VERSION}}', buildVersion)
     .replace('<!--#include:nav-->', buildNav(page.slug, rootPath))
     .replace('<!--#include:breadcrumb-->', buildBreadcrumb(crumbs));
 
@@ -108,6 +110,7 @@ function buildSectionPage(tier) {
     .replaceAll('{{SITE_TITLE}}', siteTitle)
     .replaceAll('{{ROOT_PATH}}', rootPath)
     .replaceAll('{{ASSET_PATH}}', assetPath)
+    .replaceAll('{{BUILD_VERSION}}', buildVersion)
     .replace('<!--#include:nav-->', buildNav(slug, rootPath))
     .replace('<!--#include:breadcrumb-->', buildBreadcrumb(crumbs));
 

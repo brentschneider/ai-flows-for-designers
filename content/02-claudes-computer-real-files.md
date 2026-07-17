@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 When this feature is on, Claude's answers can end in *artifacts you download* rather than text you copy. Behind the scenes Claude gets a sandboxed computer where it can write and run code, install packages, and produce files. For designers, the everyday wins:
 
@@ -19,13 +19,13 @@ When this feature is on, Claude's answers can end in *artifacts you download* ra
 
 The mental shift: stop asking Claude to *tell* you things and start asking it to *make* things.
 
-## Before you start
+## What you need
 
 Toggle on the file creation / code execution capability in **Settings → Features**. Check current plan availability at https://support.claude.com if you don't see it. That's it; the computer, the packages, and the document tooling are all Claude's problem.
 
 One thing worth knowing about the sandbox: it resets between tasks, and its network access is limited to safe destinations like package registries and GitHub. Your files exist there only for the duration of the work.
 
-## Step-by-step: three starter workflows
+## First run: three starter workflows
 
 **A. Survey data → analysis deliverable**
 
@@ -75,6 +75,6 @@ open locally and put in front of users: [description]
 
 **A package or website can't be reached.** The sandbox's network is restricted. Provide the material as an attachment instead, or ask Claude which alternative it can use.
 
-## Going further
+## Where this takes you
 
 This capability is the engine room for more advanced workflows: accessibility audit reports, design-token transforms, and design system changelogs all become downloadable deliverables through it. The habit that compounds: end substantial working sessions with *"package this up"* (analysis, decisions, and artifacts in one file) and you never lose a session's output to chat scroll again.

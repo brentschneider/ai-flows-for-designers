@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Without memory, every conversation starts with you re-explaining your context: your role, your project, your tools, the decision history. With memory and past-chat search on, two things change:
 
@@ -16,7 +16,7 @@ Without memory, every conversation starts with you re-explaining your context: y
 
 For designers this quietly solves a real problem: so much design rationale lives nowhere. It gets discussed, decided, and evaporates. If you work through decisions with Claude, the rationale is captured as a side effect.
 
-## Before you start
+## What you need
 
 In **Settings**, look for the memory-related toggles (generating memory from chat history, and searching/referencing past chats) and turn on what you want. A few things worth understanding about how it behaves:
 
@@ -25,7 +25,7 @@ In **Settings**, look for the memory-related toggles (generating memory from cha
 - **Incognito/private chats** don't touch memory; use them for anything you don't want carried forward.
 - If you use **Projects**, memory and past-chat search scope to the project: conversations inside a project stay searchable within it. This is a feature; one project per client or workstream keeps contexts from bleeding together.
 
-## Step-by-step
+## First run
 
 1. **Seed it deliberately.** Rather than waiting for memory to accrete, tell Claude the durable facts once: *"Remember: I'm a product designer at [org], working mainly in Figma and [stack]. My current focus is [project]. I prefer direct feedback and drafts without corporate filler."* Explicit beats inferred.
 2. **Check what it holds.** Ask: *"What do you remember about me and my work?"* Correct anything stale: *"I've rolled off the checkout project. Forget that; my focus is now the design system."*
@@ -63,6 +63,8 @@ terminology decision.
 
 **Worried about sensitive topics surfacing.** Use incognito chats for anything you don't want retained, and prune memory of anything you'd rather it not carry. Client-confidential work may belong in a dedicated project, or outside these features entirely, per your org's policy.
 
-## Going further
+## Where this takes you
 
-Memory is a multiplier for everything else you do with Claude: custom instructions encode how you work, memory encodes what you're working on, and connected tools reach the live state of your work. Together they're the difference between "a chatbot" and "a collaborator with context." One caution worth keeping: Claude's recall of your projects is a tool, not a teammate. Keep the humans in your process the primary place decisions get communicated, and let this be the searchable backup.
+Memory stacks with everything else. Custom instructions encode how you work, memory encodes what you're working on, and connected tools reach the live state of it. Together: the difference between a chatbot and a collaborator with context.
+
+One caution: Claude's recall is a tool, not a teammate. Keep humans the primary place decisions get communicated. Let this be the searchable backup.

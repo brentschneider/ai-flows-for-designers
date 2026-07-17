@@ -7,13 +7,13 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Every design system accumulates drift: the Figma button uses a 12px radius, the shipped one uses 8px; the spec says `color.text.secondary`, the code hardcodes `#6B7280`. Finding drift manually means eyeballing screens against specs. Claude can instead read the structured truth on both sides (the component's actual properties in Figma and the actual source code) and produce a systematic comparison: spacing, radii, typography, color values, token usage, and states.
 
 This is one of the highest-leverage workflows for design system teams because the output is a concrete, prioritized backlog rather than a vague sense that "things look off."
 
-## Before you start
+## What you need
 
 **Connect a Figma MCP server.** Read-only capability is sufficient here. In Claude, go to **Settings → Connectors** (on Team/Enterprise plans, an Owner adds it under **Organization settings → Connectors** first), click **Add custom connector**, paste the server's URL, and complete any sign-in it requests. Then, in a chat, click the **+** button → **Connectors** and toggle it on for the conversation. Figma's official MCP server (`https://mcp.figma.com/mcp`) is a good fit for this guide since extracting development-ready component data is exactly what it's designed for; vet any third-party alternative for trust before connecting it.
 
@@ -21,7 +21,7 @@ Enable Claude's code execution feature in **Settings → Features** so it can cl
 
 Pick one component to start, ideally one you *suspect* has drifted, so the first report proves value. Know where it lives on both sides: the Figma component (have the file open or grab its link) and the source file path or component name in the repo.
 
-## Step-by-step
+## First run
 
 1. **Extract the design truth.** Prompt: *"Get the full development spec for the Button component in my Figma file: all variants, spacing, padding, radii, typography, fills, and any bound variables/tokens. Present it as a structured table."* Review it; if variables show as raw hex, ask Claude to resolve token names too.
 2. **Extract the code truth.** Prompt: *"Clone [repo URL] and find the Button implementation. Extract every style-affecting value: padding, radius, font size/weight/line-height, colors, and whether each comes from a design token or a hardcoded value."*
@@ -60,7 +60,7 @@ each grouping in one sentence.
 
 **Everything shows as drift.** Usually a unit mismatch (rem vs. px) or a resolved-vs-token comparison. Ask Claude to normalize units and compare resolved values first, token usage second, as separate passes.
 
-## Going further
+## Where this takes you
 
 Schedule this as a recurring ritual: a monthly parity check on your core components catches drift while it's one PR deep instead of one quarter deep. Two natural extensions: a Figma-to-code token sync pipeline, so fixes for token drift ship as an automated flow rather than one-off edits, and Figma version-history diffing, to find out *when* and *where* the drift was introduced.
 

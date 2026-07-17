@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Artifacts are interactive apps Claude builds in the chat sidebar. The unlock this guide covers: those artifacts can make calls back to Claude's API from inside themselves, with no API key needed; the platform handles it. That means the thing Claude builds for you can itself be an AI product:
 
@@ -18,11 +18,11 @@ Artifacts are interactive apps Claude builds in the chat sidebar. The unlock thi
 
 For a designer, this changes what "prototype" means. Instead of faking AI behavior in a click-through, you hand stakeholders a link to the real interaction and watch how it actually feels.
 
-## Before you start
+## What you need
 
 Turn on Artifacts in **Settings → Features** on claude.ai. That's genuinely the whole setup. If you plan to share the artifact, know your audience will need Claude accounts to use AI-powered features, and their usage draws on their own plan limits.
 
-## Step-by-step
+## First run
 
 1. **Describe the product, not the code.** Prompt: *"Build me an artifact: a design critique tool. I paste a screenshot description and my design rationale; it responds with critique from three perspectives: a skeptical engineer, a PM focused on scope, and an accessibility specialist. Each critique should end with one question I should be able to answer."* Claude writes and renders the app live.
 2. **Use it immediately, then art-direct.** The first version will work and look adequate. Now do your job: *"Make the three critiques visually distinct personas. Add a severity indicator. The tone of the engineer is too hostile; make it firm but collegial."* Iterating on a working app is the same muscle as critiquing a junior's build.
@@ -64,6 +64,6 @@ should feel designed, not default.
 
 **The app forgets earlier conversation turns.** Each internal AI call starts fresh; the app must resend relevant history. Ask Claude to *"include the running conversation history in each request."*
 
-## Going further
+## Where this takes you
 
 The compounding move: combine artifacts with custom skills (reusable instruction files that encode your voice and formats). Skills define how Claude behaves; artifacts wrap that behavior in an interface anyone on your team can use without knowing prompts exist. That pairing of encoded expertise and built interface is a design team quietly shipping its own internal tools. Artifacts can even call the same connectors you use (like Figma), which opens the door to purpose-built mini-tools over your actual design data.

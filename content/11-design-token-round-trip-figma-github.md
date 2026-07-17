@@ -7,11 +7,11 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Design tokens live a double life: as Figma variables designers use, and as JSON/CSS/platform files engineers consume. Keeping the two in sync is usually either manual or requires a dedicated tool. Claude can act as the sync layer: it reads variables from Figma through an MCP connector, works on the files using its built-in code environment (where it can run tools like Style Dictionary), and writes results to GitHub, then reverses the flow to push code-side token changes back into Figma as variables.
 
-## Before you start
+## What you need
 
 **Enable code execution.** In Claude, go to **Settings → Features** and turn on the code execution / file creation capability. This gives Claude a sandboxed computer where it can clone repos and run Node or Python.
 
@@ -21,7 +21,7 @@ Design tokens live a double life: as Figma variables designers use, and as JSON/
 
 **Agree on a token format.** The W3C Design Tokens Community Group (DTCG) format is the emerging standard, and most tools (Style Dictionary v4+, Tokens Studio) speak it. Tell Claude which format your repo uses.
 
-## Step-by-step: Figma → GitHub
+## First run: Figma → GitHub
 
 1. Open your Figma file containing the variable collections you want to export.
 2. Prompt Claude: *"Read all variable collections from my Figma file and show me a summary: collection names, modes, variable counts, and types."* Verify the summary matches reality before going further.
@@ -30,7 +30,7 @@ Design tokens live a double life: as Figma variables designers use, and as JSON/
 5. Review the diff: *"Show me what changed compared to the token files already in the repo."*
 6. Ship it: Claude can commit to a branch and open a pull request via the GitHub connector, or hand you the finished files to download and commit yourself. For your first few runs, take the files and commit manually so you can inspect everything.
 
-## Step-by-step: GitHub → Figma
+## First run: GitHub → Figma
 
 1. Prompt: *"Fetch the tokens folder from [repo URL] and compare it against the variables currently in my Figma file. List additions, changes, and deletions."*
 2. Review the plan. Renames and deletions deserve special attention: a deleted variable can break bindings across a design file.
@@ -61,7 +61,7 @@ code, value in Figma. Don't change anything yet.
 
 **Round-trip drift.** Run the comparison prompt (step 1 of GitHub → Figma) as a no-op check after any sync. If the report isn't empty, something transformed lossily; the usual culprits are color formats (hex vs. rgba) or number precision.
 
-## Going further
+## Where this takes you
 
 Once the manual loop works, document your exact prompts and format decisions in a Claude Project or a reusable instruction file so any teammate can run the sync identically. A natural companion workflow: have Claude audit whether shipped code actually *uses* the tokens you're syncing, by comparing component source files against the token set.
 
