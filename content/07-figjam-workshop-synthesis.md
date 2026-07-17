@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Workshop synthesis is the classic "two hours of unglamorous work after the fun part": reading 150 stickies, clustering them, naming themes, writing the summary. If your MCP server exposes FigJam tools, Claude can do the mechanical layer end to end:
 
@@ -17,13 +17,13 @@ Workshop synthesis is the classic "two hours of unglamorous work after the fun p
 
 The result isn't just a summary in chat; it's a new, organized region *on the board itself*, where your team already works.
 
-## Before you start
+## What you need
 
 **Connect a Figma MCP server with FigJam tools.** In Claude, go to **Settings → Connectors** (on Team/Enterprise plans, an Owner adds it under **Organization settings → Connectors** first), click **Add custom connector**, paste the server's URL, and complete any sign-in it requests. Then, in a chat, click the **+** button → **Connectors** and toggle it on for the conversation. Check the server's tool list for FigJam-specific capabilities: reading board contents and creating stickies/sections are the essentials, while connectors and auto-arrange are nice extras. Write access to boards typically comes from community servers that pair with a small desktop bridge plugin you run inside Figma; those need the FigJam board open and the plugin running, and, since a write-capable server can modify your files, vet any third-party server for trust before connecting it.
 
 One prep habit pays off enormously: during the workshop, keep raw input in one region of the board. Synthesis lands in a separate region, so the original data stays intact and auditable.
 
-## Step-by-step
+## First run
 
 1. **Pull the board.** Open the board, then prompt: *"Read everything on my open FigJam board. Give me a count by type (stickies, shapes, sections) and tell me if stickies carry author or color information."* Sticky color often encodes meaning from the workshop (e.g., pink = pain point); tell Claude your color code if you used one.
 2. **First-pass clustering.** Prompt: *"Cluster the stickies into themes. For each theme: a name, a one-sentence insight written as a finding (not a category label), the sticky count, and 3 representative verbatims. Also list stickies that don't fit any cluster."* Insist on the outliers list; that's where the interesting stuff hides.
@@ -62,7 +62,7 @@ assess it into. Mark any you're unsure about with an orange dot.
 
 **Write tools missing.** Some servers are read-only for FigJam. You can still do steps 1–3 and 6 (read + synthesize + doc) and paste the synthesis back manually; that's most of the value.
 
-## Going further
+## Where this takes you
 
 Template the whole flow: save your exact prompt sequence (with your color-coding conventions) as a shared document or reusable Claude instruction set so every facilitator on the team runs synthesis identically. For recurring research programs, keep a running "meta-board" where Claude appends each session's themes; longitudinal patterns emerge that no single workshop shows.
 

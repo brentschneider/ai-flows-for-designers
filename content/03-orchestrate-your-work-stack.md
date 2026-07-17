@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Individually, each connector is a convenience. Together, they're a different way of working. The compound queries are the point: questions whose answer lives across multiple tools.
 
@@ -23,7 +23,7 @@ Your inbox is also the quiet aggregator for every design tool you use: Figma com
 
 Each of those is 30–60 minutes of tab-hopping done in one turn. For a design lead, the synthesis queries (feedback clustering, decision reconciliation) are the sleeper hit; they surface contradictions humans miss because no one person reads everything.
 
-## Before you start: connecting your tools
+## What you need: connecting your tools
 
 1. In Claude, open the **Connectors Directory** (via Settings → Connectors, or the **+** button in any chat). Each connector's page lists what it can read and do.
 2. Connect the ones that hold your working memory. For most designers that's email, calendar, and cloud files (Google Workspace or Microsoft 365 connectors), plus whatever holds your design work (Figma) and team chat if available for your plan.
@@ -32,7 +32,7 @@ Each of those is 30–60 minutes of tab-hopping done in one turn. For a design l
 
 Two judgment notes worth internalizing before you connect everything: only connect services you trust with your data flowing through them, and remember that "Claude can act on your behalf" includes write actions on some connectors; review what each one is allowed to do.
 
-## Step-by-step: your first orchestration
+## First run: your first orchestration
 
 1. **Start with a real, current need**: the meeting you're actually prepping for. Prompt: *"Find my next design review on my calendar, then gather everything relevant: the invite body, any attached or linked docs, and email threads from the last two weeks mentioning it. Then give me: decisions already made, open questions, and who's pushing for what."*
 2. **Watch how it works the tools.** Claude will search the calendar, follow the threads, open the docs. If it misses a source, point it there: *"Also check the folder called 'Q3 Navigation' in my Drive."*
@@ -78,7 +78,7 @@ shared still cite the old wording?
 
 **Wrong tool for the job.** If a needed connector isn't enabled for the conversation, Claude may improvise poorly. Check the **+ → Connectors** toggles.
 
-## Going further
+## Where this takes you
 
 Orchestration is connective tissue for everything else you do with Claude: it's how a workshop synthesis reaches the calendar invite and the follow-up email, and how an audit becomes tickets and a stakeholder summary in one motion. When a recurring orchestration proves out, save the exact prompt: a documented ritual anyone on the team can run identically.
 

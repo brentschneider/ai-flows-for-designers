@@ -7,13 +7,13 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Figma's plugin API can do almost anything you can do by hand on the canvas: create nodes, set fills, bind variables, rename layers, restructure components. Normally you'd need to write and install a plugin to use it. With a Model Context Protocol (MCP) connector that exposes a code-execution tool, Claude writes and runs that plugin code for you, live, against your open file.
 
 Practical examples designers use this for: renaming hundreds of layers to a naming convention, generating a complete color variable collection with light and dark modes, batch-swapping detached instances back to library components, and applying a text style to every stray text node in a page.
 
-## Before you start: connect a Figma MCP server
+## What you need: connect a Figma MCP server
 
 There are two flavors of Figma MCP server, and the difference matters:
 
@@ -27,7 +27,7 @@ To connect a custom MCP server in Claude:
 3. In a chat, click the **+** button → **Connectors** and confirm the Figma connector is toggled on for the conversation.
 4. If your server uses a desktop bridge, install its companion plugin in Figma (usually via **Plugins → Development** or the Figma Community), open your target file, and run the plugin to pair it with your Claude session. The server's documentation will describe its exact pairing step.
 
-## Step-by-step: your first code run
+## First run: your first code run
 
 1. Open the Figma file you want to modify and duplicate it first. Treat your first few runs as experiments on a copy, never a source-of-truth file.
 2. Start a new Claude chat with the connector enabled and confirm the link: *"Can you read the current page of my open Figma file and tell me what's on it?"* If Claude returns real layer names, you're paired.
@@ -66,7 +66,7 @@ change anything yet.
 
 **Auth errors mid-conversation.** Remove and re-add the connector in Settings → Connectors, then re-authenticate. Custom connectors can't be edited in place.
 
-## Going further
+## Where this takes you
 
 Once single-file operations feel comfortable, chain them: ask Claude to read your file's existing styles first, then generate variables that match, then re-bind layers to those variables, a three-step migration you'd otherwise do by hand. This same foundation unlocks bigger pipelines, like syncing design tokens between Figma and a codebase, or auditing what changed across a file's version history.
 

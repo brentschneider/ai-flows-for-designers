@@ -7,7 +7,7 @@
 
 ---
 
-## What you'll be able to do
+## What changes
 
 Accessibility review usually happens too late: after build, in an audit of the shipped product. Linting the *design file* moves the check left: Claude reads the actual property values in your Figma file (text fills over their backgrounds, font sizes, component dimensions) and evaluates them against Web Content Accessibility Guidelines (WCAG) 2.2 criteria that are checkable at design time:
 
@@ -18,7 +18,7 @@ Accessibility review usually happens too late: after build, in an audit of the s
 
 An important honesty note to keep in the report itself: a design-file lint covers *perceivable* criteria well, but many WCAG criteria (keyboard behavior, reading order, ARIA semantics) only exist in code. This is a first gate, not a full audit.
 
-## Before you start
+## What you need
 
 **Connect a Figma MCP server.** Read access suffices for this workflow. In Claude, go to **Settings → Connectors** (on Team/Enterprise plans, an Owner adds it under **Organization settings → Connectors** first), click **Add custom connector**, paste the server's URL, and complete any sign-in it requests. Figma's official MCP server (`https://mcp.figma.com/mcp`) is built for reading design context, which is exactly what a lint needs; community Figma MCP servers work too, but vet any third-party server for trust before connecting it. Then, in a chat, click the **+** button → **Connectors** and toggle the Figma connector on for the conversation.
 
@@ -26,7 +26,7 @@ Some servers ship a dedicated lint or accessibility-audit tool; check for it, be
 
 If you want a polished deliverable, enable code execution / file creation in **Settings → Features** so Claude can produce a formatted Word or PDF report at the end.
 
-## Step-by-step
+## First run
 
 1. **Scope the audit.** Whole files are noisy. Pick one flow or page: *"Audit the 'Checkout' page of this file: [link]."*
 2. **Run the contrast pass.** Prompt: *"For every text node, identify its effective background (walk up parents to the first solid fill), compute the contrast ratio, and flag anything below 4.5:1 for normal text or 3:1 for large text per WCAG 1.4.3. Show the actual hex pairs and computed ratios."* Demanding the computed ratio keeps the analysis grounded in real values.
@@ -58,7 +58,7 @@ which previous findings are now fixed and what's new.
 
 **The report reads as alarmist.** Prompt for tone: findings as opportunities with fixes, severity calibrated (contrast on body text ≠ contrast on placeholder text).
 
-## Going further
+## Where this takes you
 
 Make it a pre-handoff ritual: lint the file before every engineering handoff and attach the report. Then close the loop after build with a design-to-code comparison; the design-time lint plus a code-side check together cover the "designed accessible" and "built as designed" halves of the problem. For the code-only criteria, that's where a real assistive-technology audit still earns its keep.
 
