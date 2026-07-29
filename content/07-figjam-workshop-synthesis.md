@@ -1,4 +1,4 @@
-# Guide 07: Read and Write FigJam Boards for Automated Workshop Synthesis
+# Guide 05: Read and Write FigJam Boards for Automated Workshop Synthesis
 
 > After a workshop, have Claude pull every sticky note and connection off the board, synthesize themes, and write the affinity map back onto the board, with sections, stickies, and connectors included.
 

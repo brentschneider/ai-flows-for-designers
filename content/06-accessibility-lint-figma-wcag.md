@@ -1,4 +1,4 @@
-# Guide 06: Lint Your Figma File Against WCAG 2.2
+# Guide 08: Lint Your Figma File Against WCAG 2.2
 
 > Run an accessibility and design-quality audit on your actual canvas (contrast ratios, touch targets, text sizes, focus states) and get a formatted report you can hand to stakeholders.
 

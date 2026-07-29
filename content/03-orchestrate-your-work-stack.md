@@ -1,4 +1,4 @@
-# Guide 03: Orchestrate Your Whole Work Stack in One Prompt
+# Guide 04: Orchestrate Your Whole Work Stack in One Prompt
 
 > Connect Claude to your email, calendar, files, and design tools, then ask questions that span all of them: "prep me for Thursday's design review" becomes one prompt instead of forty browser tabs.
 

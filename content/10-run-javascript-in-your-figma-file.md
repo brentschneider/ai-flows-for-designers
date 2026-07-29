@@ -1,4 +1,4 @@
-# Guide 10: Run JavaScript Inside Your Live Figma File
+# Guide 12: Run JavaScript Inside Your Live Figma File
 
 > Use Claude to execute code in Figma's plugin context, so repetitive canvas work (renaming layers, generating variables, restructuring components) happens in one pass instead of one click at a time.
 

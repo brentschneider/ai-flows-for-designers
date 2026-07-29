@@ -1,4 +1,4 @@
-# Guide 08: Build Figma Slides Decks
+# Guide 07: Build Figma Slides Decks
 
 > Draft a presentation directly in Figma Slides: Claude creates the slides, places the text and shapes, sets backgrounds and transitions, and reorders the grid, while you art-direct.
 

@@ -1,4 +1,4 @@
-# Guide 04: Teach Claude Your Voice and Your Playbooks with Custom Skills
+# Guide 03: Teach Claude Your Voice and Your Playbooks with Custom Skills
 
 > Encode your writing voice, document structures, and team conventions as reusable "skills": instruction files Claude loads automatically when the task matches, so output sounds like you instead of like a chatbot.
 

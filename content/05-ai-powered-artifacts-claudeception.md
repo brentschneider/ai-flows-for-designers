@@ -1,4 +1,4 @@
-# Guide 05: Build AI-Powered Artifacts ("Claudeception")
+# Guide 06: Build AI-Powered Artifacts ("Claudeception")
 
 > Have Claude build you a working app that *contains its own Claude*: a prototype that calls the AI from inside itself, remembers data between sessions, and can even use your connected tools. Functioning AI product demos, no engineering required.
 

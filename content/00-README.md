@@ -49,7 +49,7 @@ Almost nothing.
 
 The walkthroughs use Claude as the reference implementation — it's what the steps follow. Gemini and ChatGPT cover the same ground for most workflows; where something is Claude-specific, the guide says so. Check each platform's current plan limits before you start. (caps and connector availability change often.)
 
-No coding ability is required; where code runs, the AI writes and runs it. The Figma guides (06–12) need edit access to a Figma file and an MCP connector, and each includes its own connector setup. 
+No coding ability is required; where code runs, the AI writes and runs it. The Figma guides (05, 07–12) need edit access to a Figma file and an MCP connector, and each includes its own connector setup. 
 
 - Claude: claude.ai
 - Gemini: gemini.google.com

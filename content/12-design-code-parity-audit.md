@@ -1,4 +1,4 @@
-# Guide 12: Run a Design–Code Parity Audit
+# Guide 10: Run a Design–Code Parity Audit
 
 > Answer "does production actually match the design system?" with evidence: Claude pulls a component's spec from Figma, pulls its implementation from your repo, and diffs the two into a drift report.
 
