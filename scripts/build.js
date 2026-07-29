@@ -14,6 +14,9 @@ const buildVersion = Date.now();
 const headerTemplate = readFileSync(path.join(partialsDir, 'header.html'), 'utf8');
 const footerTemplate = readFileSync(path.join(partialsDir, 'footer.html'), 'utf8');
 
+const guidePages = pages.filter((p) => p.tier !== null);
+const stepBySlug = new Map(guidePages.map((p, i) => [p.slug, i + 1]));
+
 function resolveTier(currentSlug) {
   // Guide page
   const currentPage = pages.find((p) => p.slug === currentSlug);
@@ -91,10 +94,10 @@ function buildSectionPage(tier) {
 
   const items = pages.filter((p) => p.tier === tier);
   const guideList = items
-    .map((item, i) => {
+    .map((item) => {
       const href = `${item.slug}/`;
       return `      <a class="guide-card" href="${href}">
-        <span class="guide-card-number">${String(i + 1).padStart(2, '0')}</span>
+        <span class="guide-card-number">${String(stepBySlug.get(item.slug)).padStart(2, '0')}</span>
         <span class="guide-card-label">${item.navLabel}</span>
       </a>`;
     })
