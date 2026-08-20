@@ -3,7 +3,7 @@
 > Turn on Claude's memory and past-conversation search so it knows your projects, your stack, and your preferences, and can pull up "that decision we made in March" on demand.
 
 **Difficulty:** Starter · **Time:** 10 min setup, compounds forever
-**You'll need:** Claude on claude.ai or the mobile app; memory features are enabled in Settings (availability varies by plan)
+**You'll need:** Claude on claude.ai or the mobile app; memory is free on every plan as of March 2026, and lives in Settings
 
 ---
 
@@ -18,7 +18,7 @@ For designers this quietly solves a real problem: so much design rationale lives
 
 ## What you need
 
-In **Settings**, look for the memory-related toggles (generating memory from chat history, and searching/referencing past chats) and turn on what you want. A few things worth understanding about how it behaves:
+Go to **Settings → Memory** (on the legacy interface it's **Settings → Capabilities**) and turn on **Generate memory from chats** and **Search and reference chats**. A few things worth understanding about how it behaves:
 
 - Memory is **derived from your conversations** and updates periodically in the background; very recent chats may not be reflected yet.
 - **You're in control**: you can view and edit what Claude remembers, tell it to remember or forget specific things, and deleting conversations removes their derived memories over time.

@@ -30,7 +30,7 @@ One prep habit pays off enormously: during the workshop, keep raw input in one r
 3. **Pressure-test the synthesis.** This is your judgment step, and it's where you earn your facilitator fee: *"Theme 3 feels like two different things; split it and re-sort."* or *"What's the strongest counter-reading of this data?"* Iterate until the themes match your read of the room.
 4. **Write it back.** Prompt: *"Create a new region to the right of the raw data titled 'Synthesis'. For each theme, create a section containing a heading sticky with the insight statement and the representative verbatims as stickies beneath it. Use a neutral color so synthesis is visually distinct from raw input."*
 5. **Map relationships.** Prompt: *"Draw connectors between theme sections that are causally related, labeled with the relationship (e.g., 'drives', 'blocks')."*
-6. **Generate the leave-behind.** Prompt: *"Now write the workshop summary doc: context, method, themes with evidence counts, tensions, open questions, and recommended next steps."* If Claude's file-creation feature is enabled (Settings → Features), have it produce this as a downloadable document for the people who weren't in the room.
+6. **Generate the leave-behind.** Prompt: *"Now write the workshop summary doc: context, method, themes with evidence counts, tensions, open questions, and recommended next steps."* If Claude's file-creation feature is enabled (Settings → Capabilities), have it produce this as a downloadable document for the people who weren't in the room.
 
 ## Example prompts
 
