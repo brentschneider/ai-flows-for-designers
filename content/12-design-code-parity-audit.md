@@ -17,7 +17,7 @@ This is one of the highest-leverage workflows for design system teams because th
 
 **Connect a Figma MCP server.** Read-only capability is sufficient here. In Claude, go to **Settings → Connectors** (on Team/Enterprise plans, an Owner adds it under **Organization settings → Connectors** first), click **Add custom connector**, paste the server's URL, and complete any sign-in it requests. Then, in a chat, click the **+** button → **Connectors** and toggle it on for the conversation. Figma's official MCP server (`https://mcp.figma.com/mcp`) is a good fit for this guide since extracting development-ready component data is exactly what it's designed for; vet any third-party alternative for trust before connecting it.
 
-Enable Claude's code execution feature in **Settings → Features** so it can clone and search your repository. For private repos, use the GitHub connector or a scoped access token.
+Enable Claude's code execution feature in **Settings → Capabilities** so it can clone and search your repository. For private repos, use the GitHub connector or a scoped access token.
 
 Pick one component to start, ideally one you *suspect* has drifted, so the first report proves value. Know where it lives on both sides: the Figma component (have the file open or grab its link) and the source file path or component name in the repo.
 

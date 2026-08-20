@@ -24,7 +24,7 @@ An important honesty note to keep in the report itself: a design-file lint cover
 
 Some servers ship a dedicated lint or accessibility-audit tool; check for it, because a purpose-built tool is faster than having Claude walk nodes manually. If your server lacks one, Claude can still do the audit by reading the file structure and computing contrast itself; it's just more prompts.
 
-If you want a polished deliverable, enable code execution / file creation in **Settings → Features** so Claude can produce a formatted Word or PDF report at the end.
+If you want a polished deliverable, enable code execution / file creation in **Settings → Capabilities** so Claude can produce a formatted Word or PDF report at the end.
 
 ## First run
 

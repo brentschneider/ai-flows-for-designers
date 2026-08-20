@@ -13,7 +13,7 @@ Design tokens live a double life: as Figma variables designers use, and as JSON/
 
 ## What you need
 
-**Enable code execution.** In Claude, go to **Settings → Features** and turn on the code execution / file creation capability. This gives Claude a sandboxed computer where it can clone repos and run Node or Python.
+**Enable code execution.** In Claude, go to **Settings → Capabilities** and turn on the code execution / file creation capability. This gives Claude a sandboxed computer where it can clone repos and run Node or Python.
 
 **Connect Figma.** In Claude, go to **Settings → Connectors** (on Team/Enterprise plans, an Owner adds it under **Organization settings → Connectors** first), click **Add custom connector**, paste the Figma MCP server's URL, and complete any sign-in it requests. Then, in a chat, click the **+** button → **Connectors** and toggle it on. For this workflow the server must support reading *and* writing variables; look for tools with names like "get variables," "export tokens," "import tokens," or "batch create variables" in the server's documentation. Variable write access typically comes from community servers, often paired with a desktop bridge plugin you run inside Figma; vet any third-party server for trust before connecting it, since it will be able to modify your files.
 

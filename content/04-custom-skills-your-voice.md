@@ -21,7 +21,7 @@ The difference in output quality is not subtle. Generic Claude writes competent,
 
 ## What you need
 
-Skill support varies by Claude surface. Skills are most at home in Claude Code and in claude.ai's file-creation environment, and the feature set evolves quickly, so check current documentation at https://docs.claude.com for where custom skills can be uploaded on your plan. The concepts below transfer everywhere; even where formal skill loading isn't available, the same file works as a Project instruction or a pasted preamble.
+On claude.ai, enable and upload custom Skills at **Customize → Skills**. This requires **Code execution and file creation** to be turned on first (**Settings → Capabilities**); without it, the Skills section won't appear. Skills are available on every plan, Free through Enterprise (Team/Enterprise owners manage them org-wide in organization settings). The feature set evolves quickly, so check current documentation at https://support.claude.com if what you see doesn't match. The concepts below transfer everywhere; even where formal skill loading isn't available, the same file works as a Project instruction or a pasted preamble.
 
 Gather your raw material: 3–5 examples of your best work in the target format. The skill's quality is capped by the quality and consistency of these examples.
 

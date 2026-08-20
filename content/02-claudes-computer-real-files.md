@@ -3,7 +3,7 @@
 > Claude can operate an actual Linux machine: clone repositories, install packages, run analysis, and hand you finished Word docs, spreadsheets, slide decks, and PDFs instead of text you have to reassemble yourself.
 
 **Difficulty:** Starter · **Time:** 10 min setup, useful immediately
-**You'll need:** Claude with the code execution / file creation feature enabled (Settings → Features on claude.ai; availability varies by plan)
+**You'll need:** Claude with the code execution / file creation feature enabled (Settings → Capabilities on claude.ai; on by default for Free, Pro, and Max)
 
 ---
 
@@ -21,7 +21,7 @@ The mental shift: stop asking Claude to *tell* you things and start asking it to
 
 ## What you need
 
-Toggle on the file creation / code execution capability in **Settings → Features**. Check current plan availability at https://support.claude.com if you don't see it. That's it; the computer, the packages, and the document tooling are all Claude's problem.
+The **Code execution and file creation** capability lives in **Settings → Capabilities**; it's on by default for Free, Pro, and Max, and Team/Enterprise owners control it org-wide in organization settings. Check current plan availability at https://support.claude.com if you don't see it. That's it; the computer, the packages, and the document tooling are all Claude's problem.
 
 One thing worth knowing about the sandbox: it resets between tasks, and its network access is limited to safe destinations like package registries and GitHub. Your files exist there only for the duration of the work.
 
